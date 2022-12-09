@@ -9,8 +9,9 @@
 body{
   margin:33px;
   font-family: verdana, arial, helvetica, sans-serif;
+  font-size:13px;
 }
-.top-sentence, .start-link, .show-content{
+.top-sentence, .start-link, {
   margin:33px;
 }
 
@@ -18,3 +19,4 @@ li{
   margin-top:10px;
   list-style:none;
 }
+
