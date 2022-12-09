@@ -16,7 +16,7 @@
       <td><span><%= book.body %></span></td>
       <td><span><%= link_to 'Show', "/books/#{book.id}" %></span></td>
       <td><span><%= link_to 'Edit', "/books/#{book.id}/edit" %></span></td>
-      <td><span>destroy</span></td>
+      <td><span><%= link_to 'destroy', destroy_book_path(book.id), method: :delete, "data-confirm"=>"Are you sure?" %></span></td>
     </tr>
 </tbody>
 <% end %>
@@ -34,4 +34,8 @@
      <li></li>
      <%= f.submit ' Create Book ' %>
   <% end %>
+
+
+
 </div>
+
